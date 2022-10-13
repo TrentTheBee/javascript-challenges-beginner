@@ -15,3 +15,17 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+
+let value = 0
+let table = 0
+while (table != 10) {
+   table = table + 1;
+   output.innerText += table;
+   while (value != 10) {
+      value = value + 1;
+      output.innerText += "", "" + table * value;
+
+   }
+   output.innerText += "\n";
+   value = 0
+}
